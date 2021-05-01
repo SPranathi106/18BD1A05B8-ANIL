@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <title>Fashion Feet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="c1">FASHION FEET INVENTORY MANAGEMENT SYSTEM</h1>
+    <h3><a href="/create" class="c2">Add New Product</a></h3>
+    <h3><a href="/updatestock" class="c2">Update Stock</a></h3>
+    <h3><a href="/deleteproduct" class="c2">Delete Product</a></h3>
+
+    <h2>WELCOME</h2>
+    <p> Established in the year 2012, we, Fashion Feet are a reputed Manufacturer and Exporter of an impressive array of Shoes and Sandals. Our company offers a range of stylish Casual Shoes, Men'S Casual Shoes, Mens Casual Ankle Shoes, Kids Footwear, Sports Shoes, PU Slippers, Eva Slippers, etc., that are offered in different styles, colors, designs and sizes. 
+    </p>
+    <p>
+        We are a quality based enterprise and it is our quality conscious nature that drives us to keep no stone unturned when it comes to the quality of our footwear range. As a result, we have adopted many quality measures. For instance, every process of production is monitored by industry experts, who make sure that the range is made
+    </p>
+
+    <center>
+    <table>
+    <tr>
+        <th>Product ID-num</th>
+        <th>Category</th>
+        <th>Type</th>
+        <th>Size</th>
+        <th>Stock</th>
+        <th>Price</th>
+    </tr>
+    <% for(var i=0;i<data.length;i++) {%>
+    <tr>
+        <td><%= data[i].pid %></td>
+        <td><%= data[i].category %></td>
+        <td><%= data[i].type %></td>
+        <td><%= data[i].size %></td>
+        <td><%= data[i].stock %></td>
+        <td><%= data[i].sp %></td>
+    </tr>
+    <% } %>
+    </table>
+    </center>
+
+    <footer>
+        &copy Copyright 2021 Fashionfeet.
+    </footer>
+</body>
+</html>

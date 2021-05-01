@@ -1,0 +1,12 @@
+pid,category,type,size,stock,cp,sp
+100,sandles,home,6,30,500,800
+101,sandles,leather,7,20,600,700
+102,shoes,leather,8,40,800,1000
+103,shoes,running,6,50,900,1000
+104,slippers,home,6,20,750,1050
+105,slippers,work,7,46,500,600
+106,sandles,high-heel,8,10,600,800
+107,shoes,sports,7,46,1000,1200
+108,slippers,feather,8,45,600,800
+109,sandles,low heel,9,38,700,1000
+110,shoes,sneaker,9,67,1200,1400
